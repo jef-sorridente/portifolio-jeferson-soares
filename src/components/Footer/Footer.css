@@ -1,0 +1,25 @@
+.footer > ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+.footer > ul > li > a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 50px 0;
+}
+
+.footer > ul > li > a:hover {
+  color: var(--secondary-color);
+}
+
+.footer > ul > li > a > svg {
+  font-size: 32px;
+  color: var(--secondary-color);
+}
+
+.footer > p {
+  margin: 25px;
+  text-align: center;
+}

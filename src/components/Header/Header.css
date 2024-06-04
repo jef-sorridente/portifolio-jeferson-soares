@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+.logo {
+  width: 50px;
+}
+
+.nav > ul {
+  display: flex;
+  gap: 0 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav > ul > li > a:hover {
+  color: var(--secondary-color);
+}
+
+.dropdown {
+  position: absolute;
+  animation: teste 0.3s alternate;
+  background-color: var(--primary-color);
+  border: 1px solid var(--background-color);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdown li {
+  padding: 5px 10px;
+  border-bottom: 1px solid var(--background-color);
+  font-weight: 400;
+}
+
+.dropdown li:hover > a {
+  color: var(--secondary-color);
+}
+
+.dropdown li a {
+  color: var(--text-color);
+}
+
+@keyframes teste {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}

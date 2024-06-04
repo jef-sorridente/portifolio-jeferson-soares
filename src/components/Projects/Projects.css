@@ -1,0 +1,56 @@
+.project-item {
+  padding: 25px 0;
+  border-bottom: 2px solid var(--background-color);
+
+  padding: 25px;
+  transition: 0.5s;
+}
+
+.project-item:first-child {
+  border-radius: 25px 25px 0 0;
+}
+
+.project-item:last-child {
+  border: none;
+  border-radius: 0 0 25px 25px;
+}
+
+.project-item:hover {
+  background-color: var(--background-color);
+  transition: 0.5s;
+}
+
+.project-item .project-description {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  font-weight: 500;
+}
+
+.project-description span {
+  color: var(--secondary-color);
+}
+
+.project-description svg {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.project-image {
+  margin: 20px 0;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.teste {
+  animation: teste 0.5s;
+}
+
+@keyframes teste {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
