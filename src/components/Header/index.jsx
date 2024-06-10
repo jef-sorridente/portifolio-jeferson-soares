@@ -35,16 +35,16 @@ const Header = () => {
               {openMenu === "sobre" && (
                 <ul className="dropdown">
                   <li>
-                    <Link to="about/#history">História</Link>
+                    <a href="/about/#history">História</a>
                   </li>
                   <li>
-                    <Link to="about/#history">Carreira</Link>
+                    <a href="/about/#works">Carreira</a>
                   </li>
                   <li>
-                    <Link to="about/#history">Skills</Link>
+                    <a href="/about/#skills">Skills</a>
                   </li>
                   <li>
-                    <Link to="about/#history">Educação</Link>
+                    <a href="/about/#education">Educação</a>
                   </li>
                 </ul>
               )}
