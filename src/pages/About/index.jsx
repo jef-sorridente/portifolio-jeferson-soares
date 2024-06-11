@@ -16,8 +16,12 @@ const About = () => {
         <span>Sobre Mim</span>
       </h2>
       <section className="about-details" id="history">
-        <img src={imageProfile} alt="Foto de perfil do Jeferson Soares" />
-        <div>
+        <img
+          src={imageProfile}
+          alt="Foto de perfil do Jeferson Soares"
+          className="image"
+        />
+        <div className="about-content">
           <h2 className="subtitle">
             Conheça melhor <br />
             sobre <span> minha história</span>
@@ -32,7 +36,7 @@ const About = () => {
         </div>
       </section>
       <section className="about-details" id="works">
-        <div>
+        <div className="about-content">
           <h2 className="subtitle">
             Minha carreira
             <br /> <span> profissional</span>
@@ -50,7 +54,11 @@ const About = () => {
             </li>
           </ol>
         </div>
-        <img src={imageProfile} alt="Foto de perfil do Jeferson Soares" />
+        <img
+          src={imageProfile}
+          alt="Foto de perfil do Jeferson Soares"
+          className="image"
+        />
       </section>
       <section className="about-details" id="skills">
         <div className="subtitle-skills">

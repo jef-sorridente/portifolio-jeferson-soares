@@ -5,8 +5,8 @@ import "./Home.css";
 import imageProfile from "../../assets/imageProfile.png";
 
 //Components
-import CustomButtom from "../../components/CustomButtom";
 import Projects from "../../components/Projects";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -16,7 +16,9 @@ const Home = () => {
           <h1 className="title">
             <span>Olá, meu nome é Jeferson,</span> sou Desenvolvedor Front-end
           </h1>
-          <CustomButtom link="/about">Mais Sobre Mim</CustomButtom>
+          <Link to="/about">
+            <button className="custom-buttom">Mais Sobre Mim</button>
+          </Link>
         </div>
         <img
           className="profile-image"

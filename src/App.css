@@ -34,7 +34,8 @@ a {
 
 .header,
 .home,
-.footer {
+.footer,
+.about {
   margin: 15px 0;
   padding: 0 160px;
   width: 100%;
@@ -72,4 +73,22 @@ a {
   color: var(--secondary-color);
   font-size: 42px;
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .header,
+  .home,
+  .footer,
+  .about {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header,
+  .home,
+  .footer,
+  .about {
+    padding: 0 20px;
+  }
 }
