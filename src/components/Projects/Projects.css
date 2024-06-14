@@ -42,11 +42,11 @@
   width: 100%;
 }
 
-.teste {
-  animation: teste 0.5s;
+.handle-project {
+  animation: opacity 0.5s;
 }
 
-@keyframes teste {
+@keyframes opacity {
   0% {
     opacity: 0;
   }

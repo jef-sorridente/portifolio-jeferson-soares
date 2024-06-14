@@ -89,3 +89,9 @@
   transform: scale(1.02);
   background-color: var(--hover-color);
 }
+
+@media (max-width: 425px) {
+  .card {
+    width: 200px;
+  }
+}

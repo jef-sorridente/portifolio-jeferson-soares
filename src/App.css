@@ -84,11 +84,21 @@ a {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .header,
   .home,
   .footer,
   .about {
     padding: 0 20px;
+  }
+  .title {
+    font-size: 48px;
+  }
+  .subtitle {
+    font-size: 32px;
+  }
+
+  .profile-image {
+    width: 100%;
   }
 }

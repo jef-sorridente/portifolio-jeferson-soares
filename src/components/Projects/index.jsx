@@ -25,19 +25,12 @@ const Projects = () => {
     },
     {
       id: 2,
-      name: "Teste 2",
+      name: "Página TecnoD",
       date: "Maio 2024",
-      description: "Projeto em React de um blog",
+      description:
+        "Site de tecnologia ficticio, layout criado pelo Figma projeto feito no cusrso da EBAC.",
       image:
-        "https://s5.static.brasilescola.uol.com.br/img/2019/06/arara-azul.jpg",
-    },
-    {
-      id: 3,
-      name: "Teste 3",
-      date: "Maio 2024",
-      description: "Projeto em React de um blog",
-      image:
-        "https://nxboats.com.br/wp-content/uploads/2023/11/Lamborghini.jpg",
+        "https://projeto-1-ebac-ruby.vercel.app/imagens/imagem-projeto.jpg",
     },
   ];
   return (
@@ -60,10 +53,9 @@ const Projects = () => {
               <div className="project-description">
                 <div>
                   <span>{project.name}</span>
-                  <p>{project.date}</p>
                 </div>
                 <div>
-                  <p>{project.description}</p>
+                  <p>{project.date}</p>
                   <a href="https://chatgpt.com/?oai-dm=1">Chat</a>
                 </div>
                 {openProject === project.id ? (
@@ -73,7 +65,7 @@ const Projects = () => {
                 )}
               </div>
               {openProject === project.id && (
-                <div className="teste" onClick={handleOpenProject}>
+                <div className="handle-project" onClick={handleOpenProject}>
                   <img
                     className="project-image"
                     src={project.image}
