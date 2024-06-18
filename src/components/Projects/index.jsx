@@ -56,7 +56,6 @@ const Projects = () => {
                 </div>
                 <div>
                   <p>{project.date}</p>
-                  <a href="https://chatgpt.com/?oai-dm=1">Chat</a>
                 </div>
                 {openProject === project.id ? (
                   <BsChevronDown onClick={handleOpenProject} />
