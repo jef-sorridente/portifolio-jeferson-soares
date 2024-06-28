@@ -1,6 +1,7 @@
 //CSS
 import "./Projects.css";
 
+//Hooks
 import { useState } from "react";
 
 //Icones
@@ -19,7 +20,8 @@ const Projects = () => {
       name: "Página TecnoD",
       date: "Maio 2024",
       description:
-        "Site de tecnologia ficticio, layout criado pelo Figma projeto feito no cusrso da EBAC.",
+        "Site de tecnologia ficticio, layout criado pelo Figma projeto feito em HTML e CSS no cusrso da EBAC.",
+      linguages: ["html", "css"],
       image:
         "https://projeto-1-ebac-ruby.vercel.app/imagens/imagem-projeto.jpg",
     },
@@ -29,6 +31,7 @@ const Projects = () => {
       date: "Maio 2024",
       description:
         "Site de tecnologia ficticio, layout criado pelo Figma projeto feito no cusrso da EBAC.",
+      linguages: ["html", "css"],
       image:
         "https://projeto-1-ebac-ruby.vercel.app/imagens/imagem-projeto.jpg",
     },
@@ -52,9 +55,11 @@ const Projects = () => {
             <div key={project.id} className="project-item">
               <div className="project-description">
                 <div>
+                  <h3 className="projects-subtitle">Projeto</h3>
                   <span>{project.name}</span>
                 </div>
                 <div>
+                  <p className="projects-subtitle">Data</p>
                   <p>{project.date}</p>
                 </div>
                 {openProject === project.id ? (
@@ -64,12 +69,35 @@ const Projects = () => {
                 )}
               </div>
               {openProject === project.id && (
-                <div className="handle-project" onClick={handleOpenProject}>
-                  <img
-                    className="project-image"
-                    src={project.image}
-                    alt="imagem do projeto"
-                  />
+                <div className="handle-project">
+                  <div className="project-content">
+                    <p>{project.description}</p>
+                    <div>
+                      <p>Linguagens Utilizadas:</p>
+                      <p>{project.linguages}</p>
+                    </div>
+                    <div>
+                      <div>
+                        <p>Deploy:</p>
+                        <a href="https://projeto-1-ebac-ruby.vercel.app">
+                          Link
+                        </a>
+                      </div>
+                      <div>
+                        <p>GitHub</p>
+                        <a href="https://github.com/jef-sorridente/projeto-1-ebac.git">
+                          Link
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="project-container-imagem">
+                    <img
+                      className="project-image"
+                      src={project.image}
+                      alt="imagem do projeto"
+                    />
+                  </div>
                 </div>
               )}
             </div>

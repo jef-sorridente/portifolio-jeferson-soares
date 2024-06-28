@@ -36,14 +36,34 @@
   cursor: pointer;
 }
 
+.handle-project {
+  padding: 0 50px;
+  display: flex;
+  text-align: start;
+  gap: 2%;
+  margin: 50px 0;
+  animation: opacity 0.5s;
+}
+
 .project-image {
-  margin: 20px 0;
-  border-radius: 15px;
+  border-radius: 5px;
   width: 100%;
 }
 
-.handle-project {
-  animation: opacity 0.5s;
+.project-content,
+.project-container-imagem {
+  width: 49%;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.projects-subtitle {
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 @keyframes opacity {
