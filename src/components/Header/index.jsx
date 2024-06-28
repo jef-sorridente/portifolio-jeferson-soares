@@ -7,8 +7,6 @@ import { Link, NavLink } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 
 const Header = () => {
-  const [openMenu, setOpenMenu] = useState(null);
-
   const [openNav, setOpenNav] = useState(false);
 
   const toggleMenu = () => {
@@ -22,40 +20,11 @@ const Header = () => {
         {window.innerWidth >= 768 ? (
           <nav className="nav">
             <ul>
-              <li
-                onMouseEnter={() => setOpenMenu("home")}
-                onMouseLeave={() => setOpenMenu(null)}
-              >
+              <li>
                 <Link to="/">Home</Link>
-                {!openNav && openMenu === "home" && (
-                  <ul className="dropdown">
-                    <li>
-                      <a href="/#projetos">Projetos</a>
-                    </li>
-                  </ul>
-                )}
               </li>
-              <li
-                onMouseEnter={() => setOpenMenu("sobre")}
-                onMouseLeave={() => setOpenMenu(null)}
-              >
+              <li>
                 <NavLink to="/about">Sobre Mim</NavLink>
-                {!openNav && openMenu === "sobre" && (
-                  <ul className="dropdown">
-                    <li>
-                      <a href="/about/#history">História</a>
-                    </li>
-                    <li>
-                      <a href="/about/#works">Carreira</a>
-                    </li>
-                    <li>
-                      <a href="/about/#skills">Skills</a>
-                    </li>
-                    <li>
-                      <a href="/about/#education">Educação</a>
-                    </li>
-                  </ul>
-                )}
               </li>
               <li>
                 <a href="#contato">Contato</a>
@@ -66,40 +35,11 @@ const Header = () => {
           openNav && (
             <nav className="nav">
               <ul>
-                <li
-                  onMouseEnter={() => setOpenMenu("home")}
-                  onMouseLeave={() => setOpenMenu(null)}
-                >
-                  <Link to="/">Home</Link>
-                  {!openNav && openMenu === "home" && (
-                    <ul className="dropdown">
-                      <li>
-                        <a href="/#projetos">Projetos</a>
-                      </li>
-                    </ul>
-                  )}
+                <li>
+                  <NavLink to="/">Home</NavLink>
                 </li>
-                <li
-                  onMouseEnter={() => setOpenMenu("sobre")}
-                  onMouseLeave={() => setOpenMenu(null)}
-                >
+                <li>
                   <NavLink to="/about">Sobre Mim</NavLink>
-                  {!openNav && openMenu === "sobre" && (
-                    <ul className="dropdown">
-                      <li>
-                        <a href="/about/#history">História</a>
-                      </li>
-                      <li>
-                        <a href="/about/#works">Carreira</a>
-                      </li>
-                      <li>
-                        <a href="/about/#skills">Skills</a>
-                      </li>
-                      <li>
-                        <a href="/about/#education">Educação</a>
-                      </li>
-                    </ul>
-                  )}
                 </li>
                 <li>
                   <a href="#contato">Contato</a>
