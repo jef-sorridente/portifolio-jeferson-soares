@@ -8,6 +8,26 @@ import { Link } from "react-router-dom";
 import { FaLinkedin, FaGithub, FaWhatsappSquare } from "react-icons/fa";
 
 const Footer = () => {
+  const textCopy = "jeferson53@gmail.com";
+  const btnCopy = document.getElementById("copy-button");
+
+  const copyEmail = () => {
+    navigator.clipboard
+      .writeText(textCopy)
+      .then(() => {
+        btnCopy.innerHTML = "E-mail Copiado";
+        btnCopy.classList.add = "copy-email";
+
+        setTimeout(() => {
+          btnCopy.innerHTML = "jeferson53@gmail.com";
+          btnCopy.classList.remove = "copy-email";
+        }, 4000);
+      })
+      .catch((err) => {
+        console.error("Erro ao copiar texto: ", err);
+      });
+  };
+
   return (
     <>
       <hr className="line" />
@@ -16,6 +36,7 @@ const Footer = () => {
         <ul>
           <li>
             <Link
+              className="custom-buttom"
               to="https://www.linkedin.com/in/jeferson-soares-2735ab190/"
               target="_blank"
             >
@@ -24,21 +45,27 @@ const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link to="https://github.com/jef-sorridente" target="_blank">
+            <Link
+              className="custom-buttom"
+              to="https://github.com/jef-sorridente"
+              target="_blank"
+            >
               <FaGithub />
               GitHub
             </Link>
           </li>
           <li>
-            <Link
-              to="https://api.whatsapp.com/send?phone=5551997675656&text=Olá,%20meu%20nome%20é%20Jeferson%20Soares!%0AMe%20envie%20uma%20mensagem."
-              target="_blank"
+            <button
+              onClick={copyEmail}
+              className="custom-buttom"
+              id="copy-button"
             >
-              <FaWhatsappSquare />
-              WhatApp
-            </Link>
+              jeferson53@gmail.com
+            </button>
+            <p>Clique para copiar o e-mail</p>
           </li>
         </ul>
+
         <p>&copy;Portifólio desenvolvido por Jeferson Soares - 2024</p>
       </footer>
     </>

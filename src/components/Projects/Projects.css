@@ -1,76 +1,80 @@
-.project-item {
-  padding: 25px 0;
-  border-bottom: 2px solid var(--background-color);
-
-  padding: 25px;
-  transition: 0.5s;
+.projects .subtitle {
+  margin-top: 64px;
 }
 
-.project-item:first-child {
-  border-radius: 25px 25px 0 0;
+.projects__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 64px;
 }
 
-.project-item:last-child {
-  border: none;
-  border-radius: 0 0 25px 25px;
-}
-
-.project-item:hover {
-  background-color: var(--background-color);
-  transition: 0.5s;
-}
-
-.project-item .project-description {
-  display: flex;
-  justify-content: space-between;
+.projects__container__item {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 16px;
+  padding: 32px;
   text-align: start;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.projects__container__item p {
+  font-size: 16px;
+}
+
+.item__header__title {
+  margin-bottom: 16px;
+}
+
+.item__title {
+  font-size: 20px;
   font-weight: 500;
+  margin-bottom: 8px;
 }
 
-.project-description span {
+.projects__container__item__main {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #fff;
+  padding-top: 16px;
+}
+.item__main__list__container {
+  width: 50%;
+}
+
+.item__main__list__itens {
+  margin-left: 16px;
+  list-style-type: square;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.item__container__links {
+  display: flex;
+  width: 50%;
+}
+
+.item__link {
+  background-color: var(--primary-color);
   color: var(--secondary-color);
-}
-
-.project-description svg {
-  font-size: 32px;
-  cursor: pointer;
-}
-
-.handle-project {
-  padding: 0 50px;
-  display: flex;
-  text-align: start;
-  gap: 2%;
-  margin: 50px 0;
-  animation: opacity 0.5s;
-}
-
-.project-image {
-  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  text-align: center;
+  padding: 8px;
   width: 100%;
-}
-
-.project-content,
-.project-container-imagem {
-  width: 49%;
-}
-
-.project-content {
+  margin: 0 8px;
+  border-radius: 8px;
+  transition: 0.3s;
   display: flex;
-  flex-direction: column;
-  gap: 25px;
+  align-items: center;
+  gap: 8px;
 }
 
-.projects-subtitle {
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-@keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
-  }
+.item__link:hover {
+  background-color: var(--hover-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: 0.3s;
 }

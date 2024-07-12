@@ -1,7 +1,57 @@
+/* home */
 .home {
   text-align: center;
 }
 
-.profile-image {
-  margin: 50px 0;
+.home__main {
+  height: calc(100vh - 86px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+}
+
+.home__main__content p {
+  margin-top: 8px;
+  max-width: 65%;
+}
+
+.home__main__image {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+}
+
+/* work */
+.work {
+  background-color: var(--secondary-color);
+  height: 60vh;
+  padding: 64px 0;
+  color: var(--primary-color);
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+}
+.work h2 {
+  margin-bottom: 64px;
+}
+
+.work__list {
+  flex-direction: column;
+  margin-left: 20px;
+  text-align: start;
+}
+
+.work__list > li {
+  list-style-type: decimal;
+  margin-bottom: 32px;
+}
+
+.work__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100% - 152px);
+}
+
+.work__icon {
+  font-size: 150px;
 }
