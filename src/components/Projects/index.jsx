@@ -148,6 +148,7 @@ const Projects = () => {
               <p className="item__title">Tecnologias</p>
               <ul className="item__main__list">
                 <li className="item__main__list__itens">React</li>
+                <li className="item__main__list__itens">React Router Dom</li>
                 <li className="item__main__list__itens">Styled Components</li>
                 <li className="item__main__list__itens">Figma</li>
               </ul>
