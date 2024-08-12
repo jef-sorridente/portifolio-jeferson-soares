@@ -1,9 +1,6 @@
 //CSS
 import "./Projects.css";
 
-//Import Images
-import tecnod from "../../assets/tecnod.jpg";
-
 //icons
 import { IoLogoVercel } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
@@ -75,10 +72,8 @@ const Projects = () => {
             <div className="item__main__list__container">
               <p className="item__title">Tecnologias</p>
               <ul className="item__main__list">
-                <li className="item__main__list__itens">html</li>
-                <li className="item__main__list__itens">css</li>
-                <li className="item__main__list__itens">figma</li>
                 <li className="item__main__list__itens">bootstrap</li>
+                <li className="item__main__list__itens">figma</li>
               </ul>
             </div>
             <div className="item__container__links">
@@ -121,7 +116,7 @@ const Projects = () => {
             <div className="item__container__links">
               <a
                 className="item__link"
-                href="https://vercel.com/jeferson-soares-projects/clone-disneyplus-jeferson-soares"
+                href="https://clone-disneyplus-jeferson-soares.vercel.app"
                 target="_blank"
               >
                 <IoLogoVercel /> Deploy
@@ -132,6 +127,38 @@ const Projects = () => {
                 target="_blank"
               >
                 <FaGithub /> Github
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="projects__container__item">
+          <div className="item__header__title">
+            <h4 className="item__title">Projeto</h4>
+            <p>Liga Gaúcha de Artes Marciais</p>
+          </div>
+          <div className="item__header__title">
+            <h4 className="item__title">Descrição</h4>
+            <p>
+              Página para a LGAM uma instituição de artes marciais <br />{" "}
+              *Página em construção*
+            </p>
+          </div>
+          <div className="projects__container__item__main">
+            <div className="item__main__list__container">
+              <p className="item__title">Tecnologias</p>
+              <ul className="item__main__list">
+                <li className="item__main__list__itens">React</li>
+                <li className="item__main__list__itens">Styled Components</li>
+                <li className="item__main__list__itens">Figma</li>
+              </ul>
+            </div>
+            <div className="item__container__links">
+              <a
+                className="item__link"
+                href="https://lgamrs.com.br"
+                target="_blank"
+              >
+                <IoLogoVercel /> Deploy
               </a>
             </div>
           </div>

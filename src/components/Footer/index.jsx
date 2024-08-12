@@ -5,7 +5,7 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 
 //Icons
-import { FaLinkedin, FaGithub, FaWhatsappSquare } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   const textCopy = "jeferson53@gmail.com";
