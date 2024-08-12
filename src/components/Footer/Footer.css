@@ -16,7 +16,7 @@
 
 .footer > ul > li > a > svg {
   font-size: 32px;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .footer > p {
